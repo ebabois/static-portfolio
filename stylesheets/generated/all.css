@@ -1,0 +1,83 @@
+/*
+ * Main SCSS File - SCSS v2.0
+ * last edited 02/20
+ * @author Esther Ball-Babois
+ * http://www.designkungfu.com
+ *
+ *
+ *
+ */
+@import url("http://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display&display=swap");
+@import url("http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html,
+body {
+  height: 100%; }
+
+body {
+  background: rgba(232, 239, 238, 0.75);
+  color: #535353;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  margin: 0; }
+
+h1 {
+  color: #353535;
+  font-family: 'Playfair Display', serif;
+  font-size: 2.75em;
+  margin-bottom: 0.75em; }
+
+p {
+  font-size: 1.1em; }
+
+a {
+  color: #222; }
+
+.hero {
+  display: inline-flex;
+  justify-content: center;
+  width: 100%; }
+  .hero .inner {
+    margin: .5em 2.25em;
+    max-width: 875px; }
+    .hero .inner span.fa {
+      color: #333;
+      margin: 0 0.25em; }
+      .hero .inner span.fa:hover {
+        color: #111; }
+      .hero .inner span.fa.fa-linkedin {
+        margin-right: 1em; }
+
+/**
+ * 14.1 - >= 710px ipad portrait
+ */
+@media screen and (min-width: 44.375em) {
+  .hero .inner {
+    margin: 2.5em 5em; } }
+/*
+ * responsive - >= 910px
+ */
+@media screen and (min-width: 56.875em) {
+  .hero .inner {
+    margin: 2.5em 5em; } }
+/*
+ * responsive - >= 985px ipad horizontal
+ */
+@media screen and (min-width: 61.5625em) {
+  .hero .inner {
+    margin: 2.5em 5em; } }
+/*
+ * responsive >= 1200px laptop
+ */
+@media screen and (min-width: 75em) {
+  .hero .inner {
+    margin: 2.5em 5em; } }
+
+/*# sourceMappingURL=all.css.map */
