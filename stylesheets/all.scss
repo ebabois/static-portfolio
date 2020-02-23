@@ -78,12 +78,28 @@ a {
   }
 }
 
+
+/* mobile */
+@media (max-width: 44em) {
+  .hero {
+    //background: red;
+
+    .inner {
+      span:not(.fa) {
+        display: block;
+        margin: 0.75em 0em;
+      }
+    }
+  }
+}
 /**
  * 14.1 - >= 710px ipad portrait
  */
 
 @media screen and (min-width: 44.375em) {
   .hero {
+    //background: blue;
+
     .inner {
       margin: 2.5em 5em;
     }
@@ -97,6 +113,8 @@ a {
 
 @media screen and (min-width: 56.875em) {
   .hero {
+    //background: green;
+
     .inner {
       margin: 2.5em 5em;
     }
@@ -109,6 +127,8 @@ a {
 
 @media screen and (min-width: 61.5625em) {
   .hero {
+    //background: yellow;
+
     .inner {
       margin: 2.5em 5em;
     }
@@ -122,6 +142,8 @@ a {
 
 @media screen and (min-width: 75em) {
   .hero {
+    //background: purple;
+
     .inner {
       margin: 2.5em 5em;
     }

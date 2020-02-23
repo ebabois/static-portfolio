@@ -55,6 +55,11 @@ a {
       .hero .inner span.fa.fa-linkedin {
         margin-right: 1em; }
 
+/* mobile */
+@media (max-width: 44em) {
+  .hero .inner span:not(.fa) {
+    display: block;
+    margin: 0.75em 0em; } }
 /**
  * 14.1 - >= 710px ipad portrait
  */
