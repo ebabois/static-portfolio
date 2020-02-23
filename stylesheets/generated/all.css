@@ -57,9 +57,13 @@ a {
 
 /* mobile */
 @media (max-width: 44em) {
-  .hero .inner span:not(.fa) {
-    display: block;
-    margin: 0.75em 0em; } }
+  .hero .inner {
+    margin: .5em 2.25em; }
+    .hero .inner h1 {
+      font-size: 2.25em; }
+    .hero .inner span:not(.fa) {
+      display: block;
+      margin: 0.25em 0em; } }
 /**
  * 14.1 - >= 710px ipad portrait
  */

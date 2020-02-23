@@ -85,9 +85,15 @@ a {
     //background: red;
 
     .inner {
+      margin: .5em 2.25em;
+
+      h1 {
+        font-size: 2.25em;
+      }
+
       span:not(.fa) {
         display: block;
-        margin: 0.75em 0em;
+        margin: 0.25em 0em;
       }
     }
   }
