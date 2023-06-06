@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0">
+
+  <title>Rebuilding the survey authoring app Assessments by UX designer Esther Ball-Babois</title>
+  <meta name="description"  content="The process of designing, developing and iterating on features for the Assessment Authoring application on Gloo App">
+
+  <link rel="stylesheet" type="text/css" href="../stylesheets/generated/all.css" />
+
+  <link rel="icon" href="../static/image/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="../static/image/favicon.ico" type="image/x-icon" />
+
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jquerytools.org/1.2.7/full/jquery.tools.min.js"></script>
+  <script type="text/javascript" src="../static/js/jquery.ui.effect.js"></script>
+  <script type="text/javascript" src="../static/js/designkungfu.js"></script>
+
+
+  <script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-22469190-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+  <!-- Hotjar Tracking Code for https://www.designkungfu.com -->
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3486808,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <link rel="stylesheet" type="text/css" href="/static/css/ie.css" />
+  <![endif]-->
+  </head>
+  <body>
+
+    <div class="adapt">
+      <header>
+        <div class="inner">
+          <div class="single left">
+            <a href="/"><img class="logo" alt="Design KungFu, LLC - Design and Code from Lafayette, Colorado" src="../image/dkf-logo.png"></a>
+          </div>
+
+          <div class="single right">
+      			<nav>
+      				<ul class="top-nav-menu">
+                <li class="active"><a href="/">Work</a></li>
+                <li><a href="/archived/">Archived</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/contact/">Contact</a></li>
+      				</ul>
+      			</nav>
+          </div>
+        </div>
+      </header>
+
+      <div class="page-content-index" role="main">
+        <section class="wrapper items page-article-header">
+          <div class="inner">
+            <div class="items-column">
+              <div class="item">
+                <p class="p-xlarge breadcrumb"><span class="fa fa-angle-left"></span> <a href="/">Work</a></p>
+              </div>
+              <div class="item">
+                <p class="p-tag">Assessments Authoring</p>  
+                <h1>Rebuilding the survey authoring app that <span class="highlight">measures human growth</span></h1>
+                <p class="p-xlarge">
+                  Assessments Authoring is an online survey creation tool that allows organizations to get insight on their people&#39;s life, faith and/or health status, and is running on a framework that is expensive to host.
+                </p>
+              </div>
+              <div class="item">  
+                <figure>
+                  <img src="../static/image/work/product-design-assessment-survey-tool-design-cover.png" alt="Rebuilding the Assessment Authoring application development" />
+                </figure>
+              </div>
+              
+              <div class="items-row width-thirds align-v-top">
+                <div class="item">
+                  <p class="p-small p-uppercase">
+                    Year
+                  </p>
+                  <p class="p-small">
+                    2021-2022
+                  </p>
+                </div>
+                <div class="item">
+                  <p class="p-small p-uppercase">
+                    My Involvement
+                  </p>
+                  <p class="p-small">
+                    Design Lead<br/>
+                    UX Research<br/>
+                    User Testing & Analysis<br/>
+                    Prototyping<br/>
+                    Visual Design<br/>
+                    Performance Monitoring<br/>
+                    Feedback Gathering<br/>
+                    Stakeholder Collaboration<br/>
+                    Product Strategy
+                  </p>
+                </div>
+                <div class="item">
+                  <p class="p-small p-uppercase">
+                    Environment
+                  </p>
+                  <p class="p-small">
+                    Web-based Browser
+                  </p>
+                </div>
+              </div> 
+            </div> 
+
+            <div class="items-column">
+              <div class="item">
+                <hr />
+              </div>  
+              <div class="item">
+                <p class="chapter">Research</p>      
+                <h2>
+                  Internal research and user feedback uncovered three primary <strong>problems with the Assessment Authoring application</strong>
+                </h2>  
+              </div>
+
+              <div class="items-row width-thirds align-v-top">
+                <div class="item bg-color">
+                  <h3>
+                    <span class="txt-color-dark-cyan">Outdated</span>
+                  </h3>
+                  <p class="p-large">
+                    The assessments aurhoring application is buggy and looks outdated.
+                  </p>
+                </div>  
+                <div class="item bg-color">
+                  <h3>
+                    <span class="txt-color-dark-cyan">Expensive</span>
+                  </h3>
+                  <p class="p-large">
+                    The hosting of this application is costing the business $45,000 per month to host. 
+                  </p>
+                </div>
+                <div class="item bg-color">
+                  <h3>
+                    <span class="txt-color-dark-cyan">Cumbersome</span>
+                  </h3>
+                  <p class="p-large">
+                    Authors are experiencing usability problems when creating assessments.
+                  </p>
+                </div>
+              </div> 
+
+              <div class="item"></div>
+            </div> 
+          </div>
+        </section>
+
+        <section class="wrapper items bg-color">
+          <div class="inner">
+            <div class="items-column">
+              <div class="item">
+                <p class="chapter">The Opportunity</p>
+              </div>
+              <div class="item">
+                <p class="text-style-pull-quote">
+                  How might we make the Authoring application more <span class="highlight txt-color-dark-cyan">modern</span>, <span class="highlight txt-color-dark-cyan">cost effective</span> and <span class="highlight txt-color-dark-cyan">expert driven</span>?
+                </p>
+              </div>
+            </div> 
+          </div>
+        </section>
+  
+        <section class="wrapper items">
+            <div class="inner">
+              <div class="items-column">
+                <div class="item">
+                  <p class="chapter">Approach</p>      
+                  <h2>
+                    Research&#39;s primary key findings are turned into goals for the application rebuild to solve for.  
+                  </h2>  
+                </div>
+  
+                <div class="items-row width-thirds align-v-top">
+                  <div class="item bg-color">
+                    <h3>
+                      <span class="text-size-large text-style-strikethrough">Outdated</span><br/>
+                      <span class="txt-color-dark-cyan">Modern</span>
+                    </h3>
+                    <p class="p-large">
+                      Fix bugs in the applications and redesign the application to look more modern.
+                    </p>
+                  </div>
+                  <div class="item bg-color">
+                    <h3>
+                      <span class="text-size-large text-style-strikethrough">Expensive</span><br/>
+                      <span class="txt-color-dark-cyan">Cost Effective</span>
+                    </h3>
+                    <p class="p-large">
+                      Rebuild the application in a opensource codestack that is less expensive to host.
+                    </p>
+                  </div>
+                  <div class="item bg-color">
+                    <h3>
+                      <span class="text-size-large text-style-strikethrough">Cumbersome</span><br/>
+                      <span class="txt-color-dark-cyan">Expert Driven</span>
+                    </h3>
+                    <p class="p-large">
+                      The Assessments creation process should cater for expert capability and their needs.
+                    </p>
+                  </div>
+                </div> 
+              </div> 
+
+              <div class="items-column">
+                <div class="item">
+                  <h2><strong>Rebuild</strong></h2>
+                  <p class="p-large">
+                    The first phase is to rebuild the application on a modern open-source framework, redesign the data models and solve usability issues problems as identified by PO and Solution Owner.  
+                  </p>
+                </div>
+                <div class="item">
+                  <figure>
+                    <img src="../static/image/work/product-design-assessment-survey-tool-legacy.png" alt="Legacy Assessment Authoring tool" />
+                    <figcaption>
+                      The original Assessments Authoring application. 
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>  
+
+              <div class="items-column">
+                <div class="item">
+                  <h2>Design <strong>Iteratively</strong></h2>
+                  <p class="p-large">
+                    The rebuild of the application is an active collaboration between Product and Development to architect for Data Integrity. The interface design for this application is highly inspired by the existing design of Assessments Basic application from the previous Lead designer for consistency.  
+                  </p>
+                </div>
+                <div class="item">
+                  <figure>
+                    <img src="../static/image/work/product-design-assessment-survey-tool-content-types-exploration.png" alt="Design exploration for different content modules for Assessement Authoring tool" />
+                    <figcaption>
+                      Documentation and exploration of survey content modules. 
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>  
+            </div>
+        </section>  
+
+        <section class="wrapper items bg-color">
+          <div class="inner">
+            <div class="items-column">
+              <div class="item">
+                <p class="chapter">Design</p>
+                <h3><strong>Expert</strong> Driven</h3>
+                <p class="p-large">
+                  The application remains expert driven, but catering even more to the expert assessment author with shortcuts for better proficiency.  
+                </p>
+              </div>
+            </div> 
+            <figure>
+              <img src="../static/image/work/product-design-assessment-survey-tool-expert-actions.jpg" alt="Expert action support in the Assessment creation view for the Assessment Authorinhg tool" />
+            </figure>
+            <figure>
+              <img src="../static/image/work/product-design-assessment-survey-tool-expert-actions-reorder.png" alt="Redordering questions and instructions support in the Assessment creation view for the Assessment Authorinhg tool" />
+            </figure>
+          </div>
+        </section>
+
+        <section class="wrapper items bg-color">
+          <div class="inner">
+            <div class="items-column">
+              <div class="item">
+                <h3>Data <strong>Integrity</strong></h3>
+                <p class="p-large">
+                  When considering design solutions, explore the potential side affect on data integrity, user privacy and author copyright.
+                </p>
+              </div>
+            </div> 
+            <figure>
+              <img src="../static/image/work/product-design-assessment-survey-tool-data-integrity.png" alt="Error prevention protocols to protect data integrity for the Assessment Authorinhg tool" />
+            </figure>
+          </div>  
+        </section>
+
+        <section class="wrapper items bg-color">
+          <div class="inner">
+            <div class="items-column">
+              <div class="item">
+                <h3>Make the data <strong>Relevant</strong></h3>
+                <p class="p-large">
+                  The author can explain the data results with the help of customized result pages using charts, specific questions and text annotations to help administrators and assessment takers to interpret the data as intended.
+                </p>
+              </div>
+            </div> 
+            <figure>
+              <img src="../static/image/work/product-design-assessment-survey-tool-visual-narrative.png" alt="Helping authors tell the visual narrative of their results on the Assessment Authoring tool" />
+            </figure>
+          </div>  
+        </section>
+
+        <section class="wrapper items">
+          <div class="inner">
+            <div class="items-column">
+              <div class="item">
+                <p class="chapter">Outcome</p>
+                <h2>Measurable Results</h2>
+                <p class="p-large">
+                  In July of 2020 the rebuild of the Assessment Authoring application in React.js was feature complete. 
+                </p>
+              </div>
+            </div>
+            <div class="items-row width-thirds centered">
+              <div class="item">
+                <p>
+                  <span class="text-data">$540,000</span>
+                  <span class="tex-small text-uppercase">
+                    saved per year in hosting cost
+                  </span>
+                </p>
+                <p class="p-normal">
+                  With the rebuild in a modern framework, the business is saving $45,000 per month or $540,000 per year. 
+                </p>
+              </div>
+            </div>
+            <div class="items-column">
+              <div class="item">
+                <h3>Collaboration</h3>
+                <p class="p-large">
+                  To ensure data integrity this project we worked closely as a team each representing their expertise. 
+                </p>
+                <p class="p-large">
+                  Team: <br/>
+                  Product Owner, Solution Owner, 1 Front-End Developer, 2 Back-End Developers, Director of Engineering.  
+                </p>
+              </div>
+            </div>  
+          </div> 
+        </section> 
+        <section class="wrapper items bg-color centered">
+            <div class="inner">
+              <div class="items-column">
+                <div class="item">
+                  <p class="chapter">What&#39;s Next?</p>
+                  <h2>Would you like to know more?</h2>
+                  <p class="p-large">
+                    Curious about some of my findings, <strong>the interesting discovery made during test tasks design</strong>, and other qualitative outcomes? 
+                  </p>
+                </div>
+                <div class="item">  
+                  <p><a class="button" href="/contact/">Talk to Me</a></p>
+                </div>
+              </div> 
+            </div>
+        </section>
+
+        <!--<a class="top" href="#"><span>Back to Top ↑</span></a>-->
+    </div>
+
+    <footer>
+        <div class="inner">
+        <section class="buckets">
+            <div class="bucket">
+            <img class="logo" alt="Design KungFu, LLC - Design and Code from Lafayette, Colorado" src="../image/dkf-logo.png" />
+            <p>Design Kungfu is the work of Dutch UX Designer Esther Ball-Babois, based in Colorado, USA.</p>
+            <p>&copy; 2023 Design KungFu, LLC, or the respective client.</p>
+            </div>
+            <div class="bucket centered">
+            </div>
+            <div class="bucket">
+            <nav>
+                <ul>
+                <li><a href="/">Recent UX Work</a></li>
+                <li><a href="/archived/">Archived Work</a></li>
+                <li><a href="/about/">About Me</a></li>
+                <li><a href="/contact/">Contact</a></li>
+                </ul>
+            </nav>
+            </div>
+        </div>
+      </section>
+    </div>
+  </footer>
+</div>
+
+
+<!-- Default Statcounter code for Designkungfu.com
+http://www.designkungfu.com -->
+<script type="text/javascript">
+var sc_project=11671604;
+var sc_invisible=1;
+var sc_security="b9c8475e";
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="http://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="//c.statcounter.com/11671604/0/b9c8475e/1/" alt="Web
+Analytics"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+</body>
+</html>

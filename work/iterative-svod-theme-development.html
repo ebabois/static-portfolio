@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Iterative sVOD Theme Development by UX designer Esther Ball-Babois</title>
+  <meta name="description"  content="The process of designing, developing and iterating on new themes for the Denver based VOD SaaS platform">
+
+  <link rel="stylesheet" type="text/css" href="../stylesheets/generated/all.css" />
+
+  <link rel="icon" href="../static/image/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" href="../static/image/favicon.ico" type="image/x-icon" />
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="../static/js/designkungfu.js"></script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-22469190-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+  <!-- Hotjar Tracking Code for https://www.designkungfu.com -->
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:3486808,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <link rel="stylesheet" type="text/css" href="/static/css/ie.css" />
+  <![endif]-->
+  </head>
+  <body>
+
+    <div class="adapt">
+
+      <header>
+        <div class="inner">
+          <div class="single left">
+            <a href="/"><img class="logo" alt="Design KungFu, LLC - Design and Code from Lafayette, Colorado" src="../image/dkf-logo.png"></a>
+          </div>
+
+          <div class="single right">
+      			<nav>
+      				<ul class="top-nav-menu">
+                <li class="active"><a href="/">Work</a></li>
+                <li><a href="/archived/">Archived</a></li>
+                <li><a href="/about/">About</a></li>
+                <li><a href="/contact/">Contact</a></li>
+      				</ul>
+      			</nav>
+          </div>
+        </div>
+      </header>
+
+      <div class="page-content-index" role="main">
+        <section class="wrapper items page-article-header">
+          <div class="inner">
+            <div class="items-column">
+              <div class="item">
+                <p class="p-xlarge breadcrumb"><span class="fa fa-angle-left"></span> <a href="/">Work</a></p>
+              </div>
+              <div class="item">
+                <p class="p-tag">Intelivideo</p>  
+                <h1><span class="highlight">Growing a subscriber base</span> with the platform&#39;s Video on Demand themes</h1>
+                <!--
+                <p class="p-xlarge">
+                  How a shift in focus for the platform's sales model turns out to set a big change in motion for the themes.
+                </p>
+                -->
+                <p class="p-xlarge">
+                  Intelivideo is a Video on Demand platform that helps content owners sell their content to their customer base.
+                </p>  
+                <p class="p-xlarge">
+                  In 2016 the platform makes the shift in focus from transactional sales to a subscription based sales model, resulting in a big change for the themes on the Denver based VOD platform.
+                </p>
+              </div>
+
+              <div class="item">  
+                <figure>
+                  <img src="../static/image/work/svod-iterative-theme-development-intelivideo-cover-cropped.png" alt="Website Theme Design for Denver based Video On Demand platform" />
+                </figure>
+              </div>
+
+              <div class="items-row width-thirds align-v-top">
+                <div class="item">
+                  <p class="p-small p-uppercase">
+                    Year
+                  </p>
+                  <p class="p-small">
+                    2016-2019
+                  </p>
+                </div>
+                <div class="item">
+                  <p class="p-small p-uppercase">
+                    My Involvement
+                  </p>
+                  <p class="p-small">
+                    UX Research,<br/> 
+                    Workshops,<br/> 
+                    User Testing & Analysis,<br/>
+                    Prototyping,<br/>
+                    Visual Design,<br/>
+                    Performance Monitoring,<br/>
+                    Feedback Gathering,<br/>
+                    Stakeholder Collaboration,<br/>
+                    Theme Strategy,<br/>
+                    ADA Compliance, <br/>
+                    Code Implementation (HTML/CSS, liquid)
+                  </p>
+                </div>
+                <div class="item">
+                  <p class="p-small p-uppercase">
+                    Environment
+                  </p>
+                  <p class="p-small">
+                    Web-based Browser (Responsive)
+                  </p>
+                </div>
+              </div> 
+            </div>
+
+            <div class="items-column">
+              <div class="item">
+                <hr />
+              </div>  
+              <div class="item">
+                <p class="chapter">Research</p>      
+                <h2>
+                  Extensive research and customer feedback uncovered three <strong>primary problems with adding subscription support the existing themes</strong>
+                </h2>  
+              </div>
+
+              <div class="items-row width-thirds align-v-top">
+                <div class="item bg-color">
+                  <h3>
+                    <span class="txt-color-dark-cyan">Too Rigid</span>
+                  </h3>
+                  <p class="p-large">
+                    Themes have their own unique structure making the adding of features to these themes cumbersome.
+                  </p>
+                </div>
+                <div class="item bg-color">
+                  <h3>
+                    <span class="txt-color-dark-cyan">Too Slow</span>
+                  </h3>
+                  <p class="p-large">
+                    Theme design and development is outsourced and it takes 6-9 months to create a new theme.
+                  </p>
+                </div>
+                <div class="item bg-color">
+                  <h3>
+                    <span class="txt-color-dark-cyan">Too Custom</span>
+                  </h3>
+                  <p class="p-large">
+                    They are designed for a specific client making them hard to retro-fit for the other clients.
+                  </p>
+                </div>
+              </div> 
+
+              <div class="item"></div>
+            </div> 
+          </div>
+        </section>
+        
+        <section class="wrapper items bg-color">
+          <div class="inner">
+            <div class="items-column">
+              <div class="item">
+                <p class="chapter">The Opportunity</p>
+              </div>
+              <div class="item">
+                <p class="text-style-pull-quote">
+                  How might we make Intelivideo themes <span class="highlight txt-color-dark-cyan">adaptable</span>, <span class="highlight txt-color-dark-cyan">lean</span> and <span class="highlight txt-color-dark-cyan">flexible</span>?
+                </p>
+              </div>
+            </div> 
+          </div>
+        </section>
+
+        <section class="wrapper items">
+          <div class="inner">
+            <div class="items-column">
+              <div class="item">
+                <p class="chapter">Approach</p>      
+                <h2>
+                  Research's primary key findings are turned into goals for the theme redesign to solve for. 
+                </h2>  
+              </div>
+
+              <div class="items-row width-thirds align-v-top">
+                <div class="item bg-color">
+                  <h3>
+                    <span class="text-size-large text-style-strikethrough">Too Rigid</span><br/>
+                    <span class="txt-color-dark-cyan">Adaptable</span>
+                  </h3>
+                  <p class="p-large">
+                    Adding new features to the themes should be easy, and they should require little maintenance.
+                  </p>
+                </div>
+                <div class="item bg-color">
+                  <h3>
+                    <span class="text-size-large text-style-strikethrough">Too Slow</span><br/>
+                    <span class="txt-color-dark-cyan">Lean</span>
+                  </h3>
+                  <p class="p-large">
+                    New themes should be produced in-house and we want to release more themes more often.
+                  </p>
+                </div>
+                <div class="item bg-color">
+                  <h3>
+                    <span class="text-size-large text-style-strikethrough">Too Custom</span><br/>
+                    <span class="txt-color-dark-cyan">Flexible</span>
+                  </h3>
+                  <p class="p-large">
+                    They are designed for a specific client making them hard to retro-fit for the other clients.
+                  </p>
+                </div>
+              </div> 
+            </div> 
+
+            <div class="items-column">
+              <div class="item">
+                <p class="p-decorator">01.</p>
+                <h2>How might we make it easier to <strong>add new features</strong> to themes retro-actively?</h2>
+                <p class="p-large">
+                  The existing theme structures have little in common making it cumbersome to add new features to them. Instead, new themes are developed with a standardized structure reducing the learning curve and making the implementation of new features easy.
+                </p>
+              </div>
+              <div class="item">
+                <figure>
+                  <img src="../static/image/work/svod-ux-research-theme-directory-restructure.png" alt="Visual Design for Denver based Video On Demand platform: eBook How to make social media channels work for you" />
+                  <figcaption>
+                    Visualization of the difference in legacy theme structures driving the Information Architecture Redesign process 
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="item">
+                <figure>
+                  <img src="../static/image/work/svod-content-purchase-types-theme-ia.png" alt="Proposed theme IA based on content purchase types for Denver based Video On Demand platform" />
+                  <figcaption>
+                    Proposed theme architecture for different purchase types, tVOD, sVOD and tVOD + sVOD 
+                  </figcaption>
+                </figure>
+              </div>
+            </div>  
+
+            <div class="items-column">
+              <div class="item">
+                <p class="p-decorator">02.</p>
+                <h2>How might we create <strong>more themes in less time</strong>?</h2>
+                <p class="p-large">
+                  Research what pages are crucial to maintain the theme's uniqueness and which ones are not. Regulate common pages into a master theme structure and reduce development time.
+                </p>
+                <p class="p-large">
+                  Master theme structure accounts for new and existing purchase options, delivery preferences and library sizes, while making the user experience consistent 
+                </p>
+              </div>
+              <div class="item">
+                <figure>
+                  <img src="../static/image/work/svod-theme-content-exploration.png" alt="Theme varieties of the sVOD Summit theme Design for Denver based Video On Demand platform" />
+                  <figcaption>
+                    Mobile first design exploration for content pages, purchasing and account management
+                  </figcaption>
+                </figure>
+              </div>
+            </div>  
+
+            <div class="items-column">
+              <div class="item">
+                <p class="p-decorator">03.</p>
+                <h2>How might we make a theme <strong>represent a client's brand and preferences well</strong>?</h2>
+                <p class="p-large">
+                  An audit of active clients on the platform shows that <strong>97% sells fitness inspired content</strong>. 
+                </p>
+                <p class="p-large">
+                  Who might the client be using the sVOD theme? 
+                </p>
+              </div>
+              <div class="item">
+                <figure>
+                  <img src="../static/image/work/svod-themes-client-archetypes.png" alt="Different client archetypes varieties of the Denver based Video On Demand platform" />
+                  <figcaption>
+                    The platform's user archetypes based on current client base and marketing leads
+                  </figcaption>
+                </figure>
+              </div>
+            </div>  
+          </div>
+        </section>
+
+        <section class="wrapper items">
+          <div class="inner">
+            <div class="items-column">
+              <div class="item bg-color">
+                <h2>
+                  What happens to the current themes?
+                </h2>
+                <p class="p-large">
+                  Current themes will be deprecated in an asynchronous process: 
+                </p>
+         
+                <ol>
+                  <li>
+                    <strong>Stabilize existing themes</strong><br/>
+                    Fix crucial bugs in legacy themes and freeze theme
+                  </li>
+                  <li>
+                    <strong>Structure landscape research</strong><br/>
+                    Explore user needs, flows and architecture design requirements
+                  </li>
+                  <li>
+                    <strong>Define structure</strong><br/>
+                    Theme architecture accommodates different price model variations, library sizes and access restrictions
+                  </li>
+                  <li>
+                    <strong>Design new themes</strong><br/>
+                    Supporting all sale types to create more theme options for clients to chose from. This will allow them to move off legacy themes.
+                  </li>
+                  <li>
+                    <strong>Retire legacy themes</strong><br/>
+                    Move existing clients off of legacy themes.
+                  </li>
+                </ol>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+
+        <section class="wrapper items bg-color">
+          <div class="inner">
+            <div class="items-column">
+              <div class="item">
+                <p class="chapter">Design</p>
+                <h3><strong>Content Owner</strong> forward</h3>
+                <p class="p-large">
+                  Allow the content-owner and their brand to be on the forefront. Easy to personalize, flexible pricing, product and delivery type options. 
+                </p>
+              </div>
+            </div> 
+          </div>
+
+          <figure>
+            <img src="../static/image/work/svod-website-theme-summit-varieties-ui.png" alt="Theme varieties of the sVOD Summit theme Design for Denver based Video On Demand platform" />
+            <figcaption>
+              <strong>Summit Theme</strong> -
+              Visual prototypes of the theme illustrating the options of the personalization
+            </figcaption>
+          </figure>
+        </section>
+
+
+        <section class="wrapper items bg-color">
+          <div class="inner">
+            <div class="items-column">
+              <div class="item">
+                <h3>Build to <strong>Convert</strong></h3>
+                <p class="p-large">
+                  Themes with a clear focus to help the content owner to grow their Video on Demand business and build a subscriber base. 
+                </p>
+              </div>
+            </div> 
+            <figure>
+              <img src="../static/image/work/volt-theme-specs-thumbnail-email.jpg" alt="Breakdown of the marketing sections on the sVOD Volt theme for the Denver based Video On Demand platform" />
+              <figcaption>
+                Illustration of the Volt theme sections designed to help the content owner build a subscriber base.
+              </figcaption>
+            </figure>
+          </div>  
+        </section>
+
+        <section class="wrapper items bg-color">
+          <div class="inner">
+            <div class="items-column">
+              <div class="item">
+                <h3>Powerful and <strong>Adaptable</strong></h3>
+                <p class="p-large">
+                  Flexible enough to be the delivery page, powerful enough to be a stand-alone website, built to create a deep sense of loyalty with their subscribers. Switching between themes is easy with the consistent asset requirements.
+                </p>
+              </div>
+            </div> 
+            <figure>
+              <img src="http://designkungfu.imgix.net/svod-theme-design-ui-ux-summit-social-theme-intelivideo.png" alt="Responsive VOD theme design for Denver based Video On Demand platform" />
+              <figcaption>
+                Themes are designed mobile first and practice graceful degradation
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="wrapper items bg-color">
+          <div class="inner">
+            <div class="items-column">
+              <div class="item">
+                <h3>Good, Better, <strong>Best.</strong></h3>
+                <p class="p-large">
+                  Each theme is designed as a prototype, and is an improvement based on learnings from customer feedback on the previous theme. 
+                </p>
+              </div>
+            </div> 
+          </div> 
+          <figure>
+            <img src="../static/image/work/svod-themes-iterative-theme-design.png" alt="Iterative Theme Design for Denver based Video On Demand platform" />
+            <figcaption>
+              Iterative theme sVOD theme design 
+            </figcaption>
+          </figure>
+        </section>
+
+
+        <section class="wrapper items">
+          <div class="inner">
+            <div class="items-column">
+              <div class="item">
+                <p class="chapter">Outcome</p>
+                <h2>Measurable Results</h2>
+                <p class="p-large">
+                  From all the themes it is the newer VOLT theme is a theme that converts much higher than all the other themes, the older Summit theme converts the lowest. Research states average e-commerce conversion rates to be between 1% &dash; 2%*, which sets the benchmark at 2%+ conversion rate.
+                </p>
+              </div>
+            </div>  
+            <div class="items-row width-thirds centered">
+              <div class="item">
+                <p>
+                  <span class="text-data">3.35%</span>
+                  <span class="tex-small text-uppercase">
+                    Avg. conversation for the Volt theme
+                  </span>
+                </p>
+              </div>
+              <div class="item">
+                <p>
+                  <span class="text-data">8</span>
+                  <span class="text-small text-uppercase">
+                    New themes released since 2016
+                  </span>
+                </p>
+              </div>
+              <div class="item">
+                <p>
+                  <span class="text-data">~75%</span>
+                  <span class="text-small text-uppercase">
+                    Reduction in development time for themes
+                  </span>
+                </p>
+              </div>
+            </div>  
+            <div class="items-column">
+              <div class="item">
+                <figure>
+                  <img src="http://designkungfu.imgix.net/svod-iterative-theme-development-heatmap-tracking.png" alt="Heatmap tracking with PureBarre on the Volt theme for Denver based Video On Demand platform" />
+                  <figcaption>Heatmap tracking with PureBarre content on the Volt theme</figcaption>
+                </figure>
+              </div>
+            </div> 
+            <div class="items-column centered">
+              <div class="item">
+                <p class="p-large">
+                  Some of our wonderful clients that have trusted Intelivideo themes to grow their VOD subscriber base are:
+                </p>
+              </div>
+            </div>  
+            <div class="items-row width-quarts centered">
+              <div class="item">
+                <figure>
+                  <img src="../static/image/logo/tbc-logo.png" alt="Title Boxing Club on Demand logo" />
+                </figure>
+              </div>
+              <div class="item">
+                <figure>
+                  <img src="../static/image/logo/jazzercise-logo.png" alt="Jazzercise logo" />
+                </figure>
+              </div>
+              <div class="item">
+                <figure>
+                  <img src="../static/image/logo/p57-logo.png" alt="Physique57 logo" />
+                </figure>
+              </div>
+              <div class="item">
+                <figure>
+                  <img src="../static/image/logo/pure-barre-logo.png" alt="PureBarre on Demand logo" />
+                </figure>
+              </div>
+            </div>  
+            <div class="items-column centered">
+              <div class="item">
+                <p class="p-normal">
+                  Last updated February 2021.
+                </p>
+              </div>  
+            </div>
+          </div>
+        </section>
+
+        <section class="wrapper items bg-color centered">
+          <div class="inner">
+            <div class="items-column">
+              <div class="item">
+                <p class="chapter">What's Next?</p>
+                <h2>Would you like to know more?</h2>
+                <p class="p-large">
+                  Curious about some of my findings, <strong>the theme that missed the mark</strong> overall theme conversions and what my next steps would be?
+                </p>
+              </div>
+              <div class="item">  
+                <p><a class="button" href="/contact/">Talk to Me</a></p>
+              </div>
+            </div> 
+          </div>
+        </section>
+      </div>
+    
+      
+      <!--
+      <div class="content" role="main">
+        <section class="text-section text-section-bg">
+          <div class="inner">
+            
+            <h3>If this, than this, if that, than that. Also known as formulas</h3>
+            <p>
+              There are different ways clients can sell their content on the themes, such offering content for sale, rent, and subscription.
+              Then, they can specify how they want to handle pre-sale access. The variations have been established in
+              the Master User Flow on what behavior will be triggered based on the pricing and delivery preferences specified by the client.
+            </p>
+
+            <p>Pricing Models</p>
+            <ul>
+              <li>Transactional (tVOD): Rent, one-time purchase.</li>
+              <li>Subscription (sVOD): Subscribe on a monthly or yearly basis.</li>
+              <li>Both (tVOD + sVOD): Rent, one-time purchase or subscribe on a monthly or yearly basis</li>
+            </ul>
+
+            <p>Content Delivery Models</p>
+            <ul>
+              <li>Default: Users can browse the library before purchase.</li>
+              <li>Log In Required: Users can not see any library contents before purchase.</li>
+              <li>Members: Theme handles the delivery of the content only, users are required to log in.</li>
+            </ul>
+            <p>
+              With the new structure in place we can now focus on developing effective themes, focused on conversion and reducing churn in subscribers.
+            </p>
+
+
+            <section class="text-section three-sections">
+              <figure>
+                <img src="../static/image/work/ux-research-user-flow-user-task-session.jpg" alt="Visual Design for Denver based Video On Demand platform: eBook How to make social media channels work for you" />
+                <figcaption>
+                  <strong>User Task Design</strong> -
+                  a compilation of support tickets and personal expectations.
+                </figcaption>
+              </figure>
+              <figure>
+                <img src="../static/image/work/ux-research-userflow-purchase.jpg" alt="UX Research for Denver based Video On Demand platform: restructuring the themes" />
+                <figcaption>
+                  <strong>Purchase User Flow</strong> -
+                  how does a purchase differ on the different formulas?
+                </figcaption>
+              </figure>
+              <figure>
+                <a href="67-r"  target="blank" class="image-download">
+                  <span class="fa fa-link"></span>
+                  <img src="../static/image/work/ux-research-userflow-wireframing.jpg" alt="Visual Design for Denver based Video On Demand platform: eBook How to make social media channels work for you" />
+                </a>
+                <figcaption>
+                  <strong>User Flow Wireframing</strong> -
+                  accounting for the different content formulas.
+                </figcaption>
+              </figure>
+            </section>
+
+          </div>
+        </section>
+      </div>
+    </div>
+    -->
+
+    <footer>
+      <div class="inner">
+        <section class="buckets">
+          <div class="bucket">
+            <img class="logo" alt="Design KungFu, LLC - Design and Code from Lafayette, Colorado" src="../image/dkf-logo.png" />
+            <p>Design Kungfu is the work of Dutch UX Designer Esther Ball-Babois, based in Colorado, USA.</p>
+            <p>&copy; 2023 Design KungFu, LLC, or the respective client.</p>
+          </div>
+          <div class="bucket centered">
+          </div>
+          <div class="bucket">
+            <nav>
+              <ul>
+                <li><a href="/">Recent UX Work</a></li>
+                <li><a href="/archived/">Archived Work</a></li>
+                <li><a href="/about/">About Me</a></li>
+                <li><a href="/contact/">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        </section>
+      </div>
+    </footer>
+  </div>
+
+
+  <!-- Default Statcounter code for Designkungfu.com
+  http://www.designkungfu.com -->
+  <script type="text/javascript">
+  var sc_project=11671604;
+  var sc_invisible=1;
+  var sc_security="b9c8475e";
+  </script>
+  <script type="text/javascript"
+  src="https://www.statcounter.com/counter/counter.js"
+  async></script>
+  <noscript><div class="statcounter"><a title="Web Analytics"
+  href="http://statcounter.com/" target="_blank"><img
+  class="statcounter"
+  src="//c.statcounter.com/11671604/0/b9c8475e/1/" alt="Web
+  Analytics"></a></div></noscript>
+  <!-- End of Statcounter Code -->
+
+  </body>
+</html>
